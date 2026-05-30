@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naina — Tour Guide · Morondava, Madagascar</title>
+  <meta name="description" content="Discover Western Madagascar with Naina, your trusted local guide in Morondava. Baobab Alley sunsets, Tsingy treks, lemur encounters, and authentic village visits." />
+  <meta property="og:title" content="Naina — Tour Guide · Morondava, Madagascar" />
+  <meta property="og:description" content="Your personal guide to the wonders of Western Madagascar. Baobab Alley, Tsingy, lemurs, and unforgettable adventures." />
+  <meta property="og:image" content="/images/baobab-alley-sunset.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#1e3a24" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌳</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">🌳 <span>Naina</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#tours" data-i18n="nav_tours">Tours</a></li>
+        <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+        <li><a href="#testimonials" data-i18n="nav_testimonials">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn" id="langBtn" aria-expanded="false">
+          <span id="langFlag">🇬🇧</span>
+          <span id="langCode">EN</span>
+          <svg class="chevron" viewBox="0 0 24 24" width="14" height="14"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        </button>
+        <ul class="lang-dropdown" id="langDropdown">
+          <li data-lang="en" data-flag="🇬🇧" class="active">🇬🇧 English</li>
+          <li data-lang="fr" data-flag="🇫🇷">🇫🇷 Français</li>
+          <li data-lang="ru" data-flag="🇷🇺">🇷🇺 Русский</li>
+          <li data-lang="zh" data-flag="🇨🇳">🇨🇳 中文</li>
+          <li data-lang="mg" data-flag="🇲🇬">🇲🇬 Malagasy</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg" style="background-image:url('/images/baobab-alley-sunset.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-location" data-i18n="hero_location">📍 Morondava, Madagascar</p>
+      <h1 class="hero-name">Naina</h1>
+      <p class="hero-tagline" data-i18n="hero_tagline">Your Guide to the Wonders of Madagascar</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero_cta">Contact Naina</a>
+        <a href="#tours" class="btn btn-outline" data-i18n="hero_cta2">Explore Tours</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photos reveal">
+          <div class="about-photo-main">
+            <img src="/images/naina-portrait-car.jpg" alt="Naina, local tour guide in Morondava" loading="lazy" />
+          </div>
+          <div class="about-photo-small">
+            <img src="/images/naina-headshot.jpg" alt="Naina smiling" loading="lazy" />
+          </div>
+        </div>
+        <div class="about-text reveal delay-1">
+          <span class="label" data-i18n="about_label">About Your Guide</span>
+          <h2 data-i18n="about_title">Born in Madagascar.<br>Made for Adventure.</h2>
+          <p data-i18n="about_p1">I'm Naina — born and raised in Morondava, on the wild western coast of Madagascar. I've spent my life exploring this extraordinary land: its ancient baobab forests, its razor-sharp limestone canyons, its warm-hearted villages, and its wildlife found nowhere else on Earth.</p>
+          <p data-i18n="about_p2">When you travel with me, you're not getting a standard tour. You're getting a friend who knows every trail, every sunset spot, and every local family willing to share a meal. I genuinely care that you leave Madagascar with memories that last a lifetime.</p>
+          <p data-i18n="about_p3">I speak English, French, Malagasy, and some Russian — so whatever your language, we'll connect. Safety, reliability, and a personal touch come first. Always.</p>
+          <div class="about-badges">
+            <span class="badge">🌍 <span data-i18n="badge_multi">Multilingual</span></span>
+            <span class="badge">🛡️ <span data-i18n="badge_safe">Safety First</span></span>
+            <span class="badge">❤️ <span data-i18n="badge_local">Born Local</span></span>
+            <span class="badge">⭐ <span data-i18n="badge_exp">10+ Years</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOURS -->
+  <section id="tours" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label" data-i18n="tours_label">Experiences &amp; Tours</span>
+        <h2 data-i18n="tours_title">Discover Western Madagascar</h2>
+        <p class="section-sub" data-i18n="tours_sub">Every journey is tailored to you — your pace, your passions, your adventure.</p>
+      </div>
+      <div class="tours-grid">
+        <div class="tour-card reveal">
+          <div class="tour-img"><img src="/images/baobab-single.jpg" alt="Avenue of the Baobabs" loading="lazy" /></div>
+          <div class="tour-body">
+            <span class="tour-icon">🌅</span>
+            <h3 data-i18n="t1_title">Avenue of the Baobabs</h3>
+            <p data-i18n="t1_desc">Stand beneath thousand-year-old giants as the golden hour paints the sky. Naina knows exactly where to be when the light turns magical.</p>
+            <span class="tag" data-i18n="tag_iconic">Iconic</span>
+          </div>
+        </div>
+        <div class="tour-card reveal delay-1">
+          <div class="tour-img tour-gradient g1"><span class="tour-emoji">🪨</span></div>
+          <div class="tour-body">
+            <span class="tour-icon">🏔️</span>
+            <h3 data-i18n="t2_title">Tsingy de Bemaraha</h3>
+            <p data-i18n="t2_desc">Trek through razor-sharp limestone pinnacles at this UNESCO World Heritage Site — one of Madagascar's most spectacular natural wonders.</p>
+            <span class="tag tag-alt">UNESCO</span>
+          </div>
+        </div>
+        <div class="tour-card reveal delay-2">
+          <div class="tour-img tour-gradient g2"><span class="tour-emoji">🌿</span></div>
+          <div class="tour-body">
+            <span class="tour-icon">🦎</span>
+            <h3 data-i18n="t3_title">Kirindy Forest Reserve</h3>
+            <p data-i18n="t3_desc">Home to the elusive fossa and dozens of lemur species. Naina's trained eye spots wildlife others walk straight past. Night walks available.</p>
+            <span class="tag" data-i18n="tag_wildlife">Wildlife</span>
+          </div>
+        </div>
+        <div class="tour-card reveal">
+          <div class="tour-img"><img src="/images/lemur-closeup.jpg" alt="Lemur encounter" loading="lazy" /></div>
+          <div class="tour-body">
+            <span class="tour-icon">🐾</span>
+            <h3 data-i18n="t4_title">Lemur Encounters</h3>
+            <p data-i18n="t4_desc">Come face-to-face with ring-tailed lemurs, brown lemurs, and sifakas in their natural habitat. Found only in Madagascar — truly once-in-a-lifetime.</p>
+            <span class="tag" data-i18n="tag_unique">Unique</span>
+          </div>
+        </div>
+        <div class="tour-card reveal delay-1">
+          <div class="tour-img"><img src="/images/selfie-kids.jpg" alt="Local village visit" loading="lazy" /></div>
+          <div class="tour-body">
+            <span class="tour-icon">🏘️</span>
+            <h3 data-i18n="t5_title">Village &amp; Cultural Visits</h3>
+            <p data-i18n="t5_desc">Go beyond the postcard. Naina's relationships with local communities open doors closed to ordinary tourists. Share a meal, learn a craft, live it.</p>
+            <span class="tag" data-i18n="tag_culture">Cultural</span>
+          </div>
+        </div>
+        <div class="tour-card reveal delay-2">
+          <div class="tour-img tour-gradient g3"><span class="tour-emoji">⛵</span></div>
+          <div class="tour-body">
+            <span class="tour-icon">🌊</span>
+            <h3 data-i18n="t6_title">Beach &amp; Coastal Trips</h3>
+            <p data-i18n="t6_desc">Morondava's coastline is raw and beautiful. Sail on a traditional pirogue, watch fishermen at work, and find your own stretch of paradise.</p>
+            <span class="tag" data-i18n="tag_coastal">Coastal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label" data-i18n="gallery_label">Gallery</span>
+        <h2 data-i18n="gallery_title">Madagascar Through Naina's Eyes</h2>
+        <p class="section-sub" data-i18n="gallery_sub">Every photo tells a story. Every story is an invitation.</p>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gal-item gal-wide" data-src="/images/baobab-alley-sunset.jpg" data-cap="Baobab Alley at sunset — Morondava"><img src="/images/baobab-alley-sunset.jpg" alt="Baobab Alley sunset" loading="lazy" /><div class="gal-over">🔍</div></div>
+        <div class="gal-item" data-src="/images/naina-portrait-car.jpg" data-cap="Naina — your guide"><img src="/images/naina-portrait-car.jpg" alt="Naina" loading="lazy" /><div class="gal-over">🔍</div></div>
+        <div class="gal-item" data-src="/images/lemur-closeup.jpg" data-cap="Lemur encounter"><img src="/images/lemur-closeup.jpg" alt="Lemur" loading="lazy" /><div class="gal-over">🔍</div></div>
+        <div class="gal-item" data-src="/images/baobab-single.jpg" data-cap="A lone baobab at golden hour"><img src="/images/baobab-single.jpg" alt="Baobab" loading="lazy" /><div class="gal-over">🔍</div></div>
+        <div class="gal-item gal-tall" data-src="/images/naina-headshot.jpg" data-cap="Naina, always ready"><img src="/images/naina-headshot.jpg" alt="Naina headshot" loading="lazy" /><div class="gal-over">🔍</div></div>
+        <div class="gal-item" data-src="/images/selfie-kids.jpg" data-cap="Magic moments with local kids"><img src="/images/selfie-kids.jpg" alt="Selfie with kids" loading="lazy" /><div class="gal-over">🔍</div></div>
+        <div class="gal-item" data-src="/images/guest-lemur-shoulder.jpg" data-cap="A traveller's unforgettable moment"><img src="/images/guest-lemur-shoulder.jpg" alt="Guest with lemur" loading="lazy" /><div class="gal-over">🔍</div></div>
+        <div class="gal-item" data-src="/images/guest-lemurs-arms.jpg" data-cap="Wild encounters, lifelong memories"><img src="/images/guest-lemurs-arms.jpg" alt="Guest holding lemurs" loading="lazy" /><div class="gal-over">🔍</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+    <button class="lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+    <img id="lbImg" src="" alt="" />
+    <p id="lbCap"></p>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section section-dark">
+    <div class="test-bg" style="background-image:url('/images/guest-lemur-shoulder.jpg')"></div>
+    <div class="test-overlay"></div>
+    <div class="container rel">
+      <div class="section-header reveal">
+        <span class="label label-light" data-i18n="test_label">Traveller Stories</span>
+        <h2 class="text-white" data-i18n="test_title">What Travellers Say</h2>
+      </div>
+      <div class="test-grid">
+        <div class="test-card reveal">
+          <div class="test-stars">★★★★★</div>
+          <blockquote data-i18n="test1_q">"Naina made our Madagascar trip absolutely unforgettable. His knowledge of the wildlife, his warmth with the local communities, and his ability to handle any situation made us feel completely at home. We couldn't have asked for a better guide."</blockquote>
+          <cite><strong>Ben J.</strong> <span data-i18n="test1_loc">🇬🇧 United Kingdom</span></cite>
+        </div>
+        <div class="test-card reveal delay-1">
+          <div class="test-stars">★★★★★</div>
+          <blockquote data-i18n="test2_q">"From the magical sunset at Baobab Alley to trekking through Tsingy, Naina's passion for his homeland is infectious. He went above and beyond at every turn. Already planning our return trip!"</blockquote>
+          <cite><strong>Sarah T.</strong> <span data-i18n="test2_loc">🇵🇹 Portugal</span></cite>
+        </div>
+        <div class="test-card reveal delay-2">
+          <div class="test-stars">★★★★★</div>
+          <blockquote data-i18n="test3_q">"Naina doesn't just show you Madagascar — he makes you fall in love with it. His connections with local villages gave us experiences no guidebook could offer."</blockquote>
+          <cite><strong>Alex K.</strong> <span data-i18n="test3_loc">🇷🇺 Russia</span></cite>
+        </div>
+      </div>
+      <div class="test-accent">
+        <img src="/images/guest-lemurs-arms.jpg" alt="Happy traveller with lemurs" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label" data-i18n="contact_label">Get in Touch</span>
+        <h2 data-i18n="contact_title">Ready to Explore Madagascar?</h2>
+        <p class="section-sub" data-i18n="contact_sub">Tell Naina where your curiosity leads. He'll take care of the rest.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-row">
+            <span class="contact-icon">📱</span>
+            <div><strong data-i18n="c_phone_label">Phone &amp; WhatsApp</strong><br><a href="https://wa.me/261XXXXXXXX" class="contact-link">+261 XX XXX XXXX</a></div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon">✉️</span>
+            <div><strong data-i18n="c_email_label">Email</strong><br><a href="mailto:naina@example.com" class="contact-link">naina@example.com</a></div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon">📍</span>
+            <div><strong data-i18n="c_loc_label">Based in</strong><br><span>Morondava, Madagascar</span></div>
+          </div>
+          <a href="https://wa.me/261XXXXXXXX" class="btn btn-wa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.552 4.118 1.523 5.849L0 24l6.335-1.493C8.09 23.458 10.001 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+            <span data-i18n="c_wa_btn">Message on WhatsApp</span>
+          </a>
+        </div>
+        <div class="contact-form reveal delay-1">
+          <h3 data-i18n="form_title">Send a Message</h3>
+          <form id="contactForm">
+            <div class="field">
+              <label for="fname" data-i18n="form_name">Your Name</label>
+              <input type="text" id="fname" required />
+            </div>
+            <div class="field">
+              <label for="femail" data-i18n="form_email">Email Address</label>
+              <input type="email" id="femail" required />
+            </div>
+            <div class="field">
+              <label for="ftrip" data-i18n="form_interest">Interested in</label>
+              <select id="ftrip">
+                <option value="" data-i18n="form_select">— Choose a tour —</option>
+                <option value="baobabs" data-i18n="t1_title">Avenue of the Baobabs</option>
+                <option value="tsingy" data-i18n="t2_title">Tsingy de Bemaraha</option>
+                <option value="kirindy" data-i18n="t3_title">Kirindy Forest Reserve</option>
+                <option value="lemurs" data-i18n="t4_title">Lemur Encounters</option>
+                <option value="village" data-i18n="t5_title">Village & Cultural Visits</option>
+                <option value="beach" data-i18n="t6_title">Beach & Coastal Trips</option>
+                <option value="custom" data-i18n="form_custom">Custom itinerary</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fmsg" data-i18n="form_msg">Your Message</label>
+              <textarea id="fmsg" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="form_send">Send Message</button>
+          </form>
+          <div id="formOk" class="form-ok hidden">✅ <span data-i18n="form_ok">Message sent! Naina will be in touch soon.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">🌳 Naina</span>
+          <p class="footer-tag" data-i18n="footer_tag">Tour Guide · Morondava, Madagascar</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about" data-i18n="nav_about">About</a>
+          <a href="#tours" data-i18n="nav_tours">Tours</a>
+          <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook" class="soc-link"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram" class="soc-link"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://wa.me/261XXXXXXXX" aria-label="WhatsApp" class="soc-link"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.552 4.118 1.523 5.849L0 24l6.335-1.493C8.09 23.458 10.001 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">© 2026 Naina — Tour Guide, Morondava, Madagascar</p>
+        <p class="footer-love" data-i18n="footer_love">Made with ❤️ for the love of Madagascar</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
