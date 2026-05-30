@@ -159,7 +159,7 @@ p { color: var(--text-mid); font-size: 1.05rem; }
 .section-dark { position: relative; color: #fff; overflow: hidden; }
 .test-bg { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: .15; }
 .test-overlay { position: absolute; inset: 0; background: linear-gradient(135deg,var(--green-deep),#0e2415); opacity: .92; }
-.test-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; margin-bottom: 3rem; }
+.test-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.5rem; margin-bottom: 3rem; }
 .test-card { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); border-radius: var(--r); padding: 2rem; backdrop-filter: blur(8px); transition: transform var(--tr), background var(--tr); }
 .test-card:hover { transform: translateY(-4px); background: rgba(255,255,255,.11); }
 .test-stars { color: var(--amber-light); font-size: 1rem; letter-spacing: .1em; margin-bottom: 1rem; }
@@ -176,6 +176,7 @@ p { color: var(--text-mid); font-size: 1.05rem; }
 .contact-row { display: flex; gap: 1rem; align-items: flex-start; }
 .contact-icon { font-size: 1.75rem; width: 48px; text-align: center; flex-shrink: 0; }
 .contact-row strong { color: var(--green-deep); font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; }
+.italian-joke { font-size: .85rem; color: rgba(0,0,0,.45); margin-top: -.5rem; }
 .contact-link { color: var(--amber); font-weight: 500; transition: color var(--tr); }
 .contact-link:hover { color: var(--amber-light); }
 .contact-form { background: var(--white); border-radius: var(--r); padding: 2.5rem; box-shadow: var(--shadow); }
@@ -210,7 +211,6 @@ p { color: var(--text-mid); font-size: 1.05rem; }
   .gallery-grid .gal-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
   .gallery-grid .gal-item:nth-child(5) { grid-row: span 1; }
   .test-grid { grid-template-columns: 1fr 1fr; }
-  .test-grid .test-card:last-child { grid-column: 1 / -1; max-width: 520px; margin: 0 auto; }
 }
 
 @media (max-width: 768px) {
@@ -229,7 +229,6 @@ p { color: var(--text-mid); font-size: 1.05rem; }
   .gallery-grid .gal-item:nth-child(1) { grid-column: span 2; grid-row: span 1; }
   .gallery-grid .gal-item:nth-child(5) { grid-row: span 1; }
   .test-grid { grid-template-columns: 1fr; }
-  .test-grid .test-card:last-child { grid-column: auto; max-width: none; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-top { flex-direction: column; text-align: center; }
   .footer-social { justify-content: center; }

@@ -29,7 +29,7 @@ const T = {
     test3_q:"\u201CNaina doesn't just show you Madagascar — he makes you fall in love with it. His connections with local villages gave us experiences no guidebook could offer.\u201D",
     test3_loc:"🇷🇺 Russia",
     contact_label:"Get in Touch", contact_title:"Ready to Explore Madagascar?", contact_sub:"Tell Naina where your curiosity leads. He'll take care of the rest.",
-    c_phone_label:"Phone & WhatsApp", c_email_label:"Email", c_loc_label:"Based in", c_wa_btn:"Message on WhatsApp",
+    c_phone_label:"Phone & WhatsApp", c_loc_label:"Based in", c_wa_btn:"Message on WhatsApp",
     form_title:"Send a Message", form_name:"Your Name", form_email:"Email Address", form_interest:"Interested in",
     form_select:"— Choose a tour —", form_custom:"Custom itinerary", form_msg:"Your Message", form_send:"Send Message",
     form_ok:"Message sent! Naina will be in touch soon.",
@@ -60,7 +60,7 @@ const T = {
     test3_q:"\u00AB Naina ne vous montre pas seulement Madagascar — il vous en fait tomber amoureux. Ses connexions avec les villages locaux nous ont offert des expériences qu'aucun guide de voyage ne pourrait proposer. \u00BB",
     test3_loc:"🇷🇺 Russie",
     contact_label:"Contactez-nous", contact_title:"Prêt à Explorer Madagascar ?", contact_sub:"Dites à Naina où votre curiosité vous mène. Il s'occupe du reste.",
-    c_phone_label:"Téléphone & WhatsApp", c_email_label:"E-mail", c_loc_label:"Basé à", c_wa_btn:"Écrire sur WhatsApp",
+    c_phone_label:"Téléphone & WhatsApp", c_loc_label:"Basé à", c_wa_btn:"Écrire sur WhatsApp",
     form_title:"Envoyer un Message", form_name:"Votre Nom", form_email:"Adresse E-mail", form_interest:"Intéressé par",
     form_select:"— Choisir un circuit —", form_custom:"Itinéraire sur mesure", form_msg:"Votre Message", form_send:"Envoyer",
     form_ok:"Message envoyé ! Naina vous contactera bientôt.",
@@ -91,7 +91,7 @@ const T = {
     test3_q:"\u00AB Найна не просто показывает вам Мадагаскар — он заставляет вас влюбиться в него. Его связи с местными деревнями подарили нам впечатления, которые не найти ни в одном путеводителе. \u00BB",
     test3_loc:"🇷🇺 Россия",
     contact_label:"Свяжитесь", contact_title:"Готовы Исследовать Мадагаскар?", contact_sub:"Расскажите Найна, куда ведёт ваше любопытство. Он позаботится об остальном.",
-    c_phone_label:"Телефон и WhatsApp", c_email_label:"Эл. почта", c_loc_label:"Базируется в", c_wa_btn:"Написать в WhatsApp",
+    c_phone_label:"Телефон и WhatsApp", c_loc_label:"Базируется в", c_wa_btn:"Написать в WhatsApp",
     form_title:"Отправить Сообщение", form_name:"Ваше Имя", form_email:"Электронная Почта", form_interest:"Интересует",
     form_select:"— Выберите тур —", form_custom:"Индивидуальный маршрут", form_msg:"Ваше Сообщение", form_send:"Отправить",
     form_ok:"Сообщение отправлено! Найна свяжется с вами в ближайшее время.",
@@ -122,7 +122,7 @@ const T = {
     test3_q:"\u201CNaina 不只是带你看马达加斯加 —— 他让你爱上它。他与当地村庄的联系给了我们任何旅行指南都无法提供的体验。\u201D",
     test3_loc:"🇷🇺 俄罗斯",
     contact_label:"联系我们", contact_title:"准备好探索马达加斯加了吗？", contact_sub:"告诉 Naina 您的好奇心会带您去哪里。其余的交给他。",
-    c_phone_label:"电话和 WhatsApp", c_email_label:"电子邮件", c_loc_label:"所在地", c_wa_btn:"WhatsApp 发消息",
+    c_phone_label:"电话和 WhatsApp", c_loc_label:"所在地", c_wa_btn:"WhatsApp 发消息",
     form_title:"发送消息", form_name:"您的姓名", form_email:"电子邮箱", form_interest:"感兴趣的",
     form_select:"— 选择线路 —", form_custom:"定制行程", form_msg:"您的留言", form_send:"发送",
     form_ok:"消息已发送！Naina 会尽快与您联系。",
@@ -153,7 +153,7 @@ const T = {
     test3_q:"\u00AB Naina dia tsy mampiseho anao fotsiny an'i Madagasikara — manao anao ho tia azy izy. \u00BB",
     test3_loc:"🇷🇺 Rosia",
     contact_label:"Mifandraisa", contact_title:"Vonona Hikaroka an'i Madagasikara?", contact_sub:"Lazao amin'i Naina izay itarihin'ny fahaliananao. Izy no hiandraikitra ny ambiny.",
-    c_phone_label:"Finday & WhatsApp", c_email_label:"Mailaka", c_loc_label:"Monina ao", c_wa_btn:"Manoratra amin'ny WhatsApp",
+    c_phone_label:"Finday & WhatsApp", c_loc_label:"Monina ao", c_wa_btn:"Manoratra amin'ny WhatsApp",
     form_title:"Mandefa Hafatra", form_name:"Anaranao", form_email:"Adiresy Mailaka", form_interest:"Liana amin'ny",
     form_select:"— Misafidy fizahan-tany —", form_custom:"Dia manokana", form_msg:"Hafatrao", form_send:"Alefa",
     form_ok:"Lasa ny hafatra! Hifandray aminao i Naina tsy ho ela.",
@@ -284,7 +284,7 @@ if (contactForm) {
     const trip = document.getElementById("ftrip").value;
     const msg = document.getElementById("fmsg").value;
     const waText = encodeURIComponent(`Hi Naina! My name is ${name} (${email}).\nI'm interested in: ${trip || "a custom trip"}.\n\n${msg}`);
-    window.open(`https://wa.me/261XXXXXXXX?text=${waText}`, "_blank");
+    window.open(`https://wa.me/261329501706?text=${waText}`, "_blank");
     contactForm.classList.add("hidden");
     formOk.classList.remove("hidden");
     setTimeout(() => { contactForm.classList.remove("hidden"); formOk.classList.add("hidden"); contactForm.reset(); }, 5000);
